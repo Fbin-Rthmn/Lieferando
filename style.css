@@ -1,0 +1,538 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto';
+}
+
+h4 {
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+p {
+    font-family: 'Roboto';
+}
+
+span {
+    font-family: 'Roboto';
+}
+
+.headline {
+    background-color: rgb(243,104,5);
+    height: 48px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-name {
+    display: flex;
+    align-items: end;
+}
+
+.head-name h1 {
+    font-style: italic;
+    font-size: 48px;
+    color: rgb(252,252,252);
+    margin: 0;
+}
+
+.head-name p {
+    font-size: 12px;
+    font-style: italic;
+    margin: 0;
+}
+
+.food-card {
+    color: rgb(252,252,252);
+    letter-spacing: 6px;
+}
+
+.head-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-right img {
+    height: 40px;
+    width: 40px;
+}
+
+.head-right img:hover {
+    cursor: pointer;
+}
+
+.main {
+    width: calc(100% - 344px);
+}
+
+.main-local {
+    background-color: rgb(252,252,252);
+    box-shadow: -10px 2px 15px 0px rgba(0, 0, 0, 0.20);
+}
+
+.main-local img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.local {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.local h1 {
+    font-family: 'Roboto';
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.valuation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.valuation img {
+    width: 16px;
+    height: 16px;
+}
+
+.valuation p {
+    margin: 0 0 0 4px;
+    font-size: 14px;
+}
+
+.valuation a {
+    text-decoration: underline;
+    color: black;
+}
+
+.valuation a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.location {
+    margin: 12px 0 24px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.location p {
+    margin: 0 0 0 4px;
+    font-size: 14px;
+}
+
+.location img {
+    width: 16px;
+    height: 16px;
+}
+
+.descreption p {
+    margin: 0 0 24px 0;
+    font-size: 14px;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 120px 0 120px;
+}
+
+.search-input {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+    margin: 16px 120px 16px 120px;
+}
+
+.search-input input {
+    width: 100%;
+    height: 24px;
+    border-radius: 8px;
+}
+
+.main-navbar-article {
+    padding: 8px 16px;
+}
+
+.main-navbar-article:hover:not(.active) {
+    background-color: rgb(245,243,241);
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(243,104,5);
+    color: rgb(252,252,252);
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.main-navbar-article h4 {
+    margin: 0;
+}
+
+aside {
+    background-color: rgb(252,252,252);
+    position: fixed;
+    top: 72px;
+    bottom: 72px;
+    right: 0;
+    width: 344px;
+    text-align: center;
+    box-shadow: -2px 0px 15px 0px rgba(0, 0, 0, 0.20);
+    border-end-start-radius: 24px;
+    border-start-start-radius: 24px;
+}
+
+.contain-pay {
+    width: 344px;
+    position: fixed;
+    bottom: 144px;
+}
+
+.contain-pay-button {
+    cursor: pointer;
+    color: rgb(252,252,252);
+    width: calc(344px - 32px);
+    height: 48px;
+    position: fixed;
+    right: 16px;
+    bottom: 88px;
+    border-radius: 32px;
+    background-color: rgb(243,104,5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-pay-button h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+#order-article-section {
+    position: absolute;
+    bottom: calc(72px + 100px);
+    top: 120px;
+    overflow-y: auto;
+}
+
+.order-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.order-amount p {
+    width: 24px;
+    padding: 0 8px 0 8px;
+    text-align: end;
+}
+
+#order-food-name p {
+    width: 216px;
+    text-align: start;
+}
+
+.sum-price p {
+    width: calc(344px - 216px - 40px - 16px);
+    text-align: end;
+    padding:  0 8px 0 8px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    border-bottom: solid;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-bottom: 8px;
+}
+
+.counter p {
+    width: 48px;
+    margin: 0;
+}
+
+.counter button {
+    cursor: pointer;
+}
+
+#main-foods {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.food-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 8px;
+    border: solid 2px;
+    border-color: rgb(245,243,241);
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.food-order button {
+    cursor: pointer;
+    border-radius: 50%;
+    border: thin;
+    scale: 2.5;
+    margin-right: 24px;
+}
+
+.food-order button:hover {
+    color: rgb(252,252,252);
+    background-color: rgb(243,104,5);
+}
+
+.selection-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    accent-color: rgb(243,104,5);
+    scale: 1.5;
+    margin-right: 8px;
+    border-color: rgb(243,104,5);
+    background-color: rgb(243,104,5);
+}
+
+.selection-delivery {
+    font-style: italic;
+    margin-left: 72px;
+    display: flex;
+    justify-content: center;
+}
+
+.selection-pick-up {
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 1070px) {
+    .local {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 24px 0 24px;
+    }
+
+    .search-input {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 32px;
+        margin: 16px 24px 16px 24px;
+    }
+
+    #main-foods {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .main-navbar-article {
+        padding: 8px 8px;
+    }
+}
+
+
+@media (max-width: 790px) {
+
+    h2 {
+        font-size: 16px;
+    }
+
+    span {
+        font-family: 'Roboto';
+        font-size: 12px;
+    }
+
+    .basket h2 {
+        font-size: 24px;
+    }
+
+    .food-card {
+        letter-spacing: 0px;
+    }
+
+    .food-card h2 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    #order-food-name p {
+        width: 144px;
+    }
+
+    .order-article p {
+        font-size: 14px;
+    }
+
+    .sum-price p {
+        width: calc(256px - 144px - 40px - 16px);
+        text-align: end;
+        padding: 0 8px 0 8px;
+    }
+
+    aside {
+        width: 256px;
+    }
+
+    .main {
+        width: calc(100% - 256px);
+    }
+
+    .contain-pay {
+        width: 256px;
+    }
+
+    .contain-pay-button {
+        cursor: pointer;
+        color: rgb(252,252,252);
+        width: calc(256px - 32px);
+        height: 36px;
+        position: fixed;
+        right: 16px;
+        bottom: 88px;
+        border-radius: 32px;
+        background-color: rgb(243,104,5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contain-pay-button h3 {
+        font-size: 16px;
+    }
+
+    .counter p {
+        font-size: 14px;
+    }
+
+    .food-order button {
+        scale: 2;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .main-navbar {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .head-name h1 {
+        font-size: 42px;
+    }
+
+    .food-card h2 {
+        display: none;
+    }
+
+    .descreption {
+        display: none;
+    }
+
+    .local h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .valuation {
+        align-items: center;
+    }
+
+    .valuation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 540px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #main-foods {
+        width: calc(100% - 48px);
+
+    }
+
+    aside {
+        width: 100%;
+        background-color: rgb(252,252,252);
+        position: unset;
+        text-align: center;
+        box-shadow: -2px 0px 15px 0px rgba(0, 0, 0, 0.20);
+        border-end-start-radius: 0;
+        border-start-start-radius: 0;
+    }
+
+    #order-article-section {
+        position: unset;
+        overflow-y: auto;
+    }
+
+    .contain-pay {
+        margin: 32px 0 32px 0;
+        position: unset;
+        width: 100%;
+    }
+
+    .contain-pay-button {
+        margin: 0 16px 32px 0;
+        position: unset;
+        cursor: pointer;
+        color: rgb(252,252,252);
+        width: 100%;
+        height: 36px;
+        right: 16px;
+        bottom: 88px;
+        border-radius: 32px;
+        background-color: rgb(243,104,5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
