@@ -236,6 +236,7 @@ let allArticles = [
   ];
   let basket = [];
 
+
   function saveBasket() {
     let basketAsText = JSON.stringify(basket);
 

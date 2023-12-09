@@ -2,21 +2,8 @@ body {
     margin: 0;
 }
 
-h1, h2, h3 {
-    font-family: 'Roboto';
-}
-
 h4 {
-    font-family: 'Roboto';
     margin: 0;
-}
-
-p {
-    font-family: 'Roboto';
-}
-
-span {
-    font-family: 'Roboto';
 }
 
 .headline {
@@ -86,7 +73,6 @@ span {
 }
 
 .local h1 {
-    font-family: 'Roboto';
     font-size: 32px;
     margin-top: 24px;
     margin-bottom: 24px;
@@ -367,7 +353,6 @@ input[type="radio"] {
     }
 
     span {
-        font-family: 'Roboto';
         font-size: 12px;
     }
 
