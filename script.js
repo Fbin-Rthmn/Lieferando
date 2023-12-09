@@ -1,5 +1,5 @@
 function loadArticles(array, headH2) {
-  let foodHead = document.getElementById("main-foods");
+  let foodHead = document.getElementById('main-foods');
 
   foodHead.innerHTML = /*html*/ `
     <h2>${headH2}</h2>
@@ -25,16 +25,16 @@ function showArticles(array) {
 
 
 function addClassActive(add) {
-  document.getElementById(add).classList.add("active");
+  document.getElementById(add).classList.add('active');
 }
 
 
 function removeClassActive() {
-  document.getElementById('appetizers').classList.remove("active");
-  document.getElementById('salads').classList.remove("active");
-  document.getElementById('pizzas').classList.remove("active");
-  document.getElementById('burgers').classList.remove("active");
-  document.getElementById('softDrinks').classList.remove("active");
+  document.getElementById('appetizers').classList.remove('active');
+  document.getElementById('salads').classList.remove('active');
+  document.getElementById('pizzas').classList.remove('active');
+  document.getElementById('burgers').classList.remove('active');
+  document.getElementById('softDrinks').classList.remove('active');
 }
 
 
@@ -137,8 +137,8 @@ function renderBasket() {
 
 
 function filterFoods() {    //Suchfunktion
-  let mainFoods = document.getElementById("list-foods");
-  let search = document.getElementById("search").value;
+  let mainFoods = document.getElementById('list-foods');
+  let search = document.getElementById('search').value;
   search = search.toLowerCase();
 
   mainFoods.innerHTML = /*html*/ ``;

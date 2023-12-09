@@ -1,5 +1,5 @@
 function loadTemplateNavbar() {
-    let contentNav = document.getElementById("main-navbar");
+    let contentNav = document.getElementById('main-navbar');
   
     contentNav.innerHTML = /*html*/ `
               <div class="main-navbar">
@@ -17,7 +17,7 @@ function loadTemplateNavbar() {
 
 
   function loadTemplateFoods(name, price) {
-    let mainFoods = document.getElementById("list-foods");
+    let mainFoods = document.getElementById('list-foods');
   
     mainFoods.innerHTML += /*html*/ `
       <div class="food-order">
@@ -32,18 +32,18 @@ function loadTemplateNavbar() {
 
 
   function contentEmptyBasket() {
-    let contentSumBasket = document.getElementById("basket");
+    let contentSumBasket = document.getElementById('basket');
   
     contentSumBasket.innerHTML = /*html*/ `
     <div><h2>Warenkorb</h2></div>
     <div><h3>Fülle deinen Warenkorb</h3></div>
-        <div id="order-article-section"></div>      
+    <div id="order-article-section"></div>      
     `;
   }
   
   
   function contentFullBasket() {
-    let contentSumBasket = document.getElementById("basket");
+    let contentSumBasket = document.getElementById('basket');
   
     contentSumBasket.innerHTML = /*html*/ `
     <div><h2>Warenkorb</h2></div>
@@ -55,7 +55,7 @@ function loadTemplateNavbar() {
 
 
   function templateContentBasket(i, foodName, foodSumPrice, amount, foodPrice) {
-    let contentBasket = document.getElementById("order-article-section");
+    let contentBasket = document.getElementById('order-article-section');
   
     contentBasket.innerHTML += /*html*/ `
     <div class="order-article">
@@ -69,7 +69,7 @@ function loadTemplateNavbar() {
 
 
   function filterFoodsTemplate(foodName, foodPrice) {
-    let mainFoods = document.getElementById("list-foods");
+    let mainFoods = document.getElementById('list-foods');
   
     mainFoods.innerHTML += /*html*/ `
       <div class="food-order">
